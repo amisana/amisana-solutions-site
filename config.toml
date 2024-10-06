@@ -1,0 +1,50 @@
+# Basic Site Configuration
+baseURL = "https://www.amisanasolutions.com/"
+languageCode = "en-us"
+title = "Amisana Solutions"
+theme = "docsy"
+
+# Enable Hugo Modules
+[module]
+  proxy = "direct"
+
+[module.hugoVersion]
+  extended = true
+  min = "0.73.0"
+
+[[module.imports]]
+  path = "github.com/google/docsy"
+
+# Site Parameters
+[params]
+  # Site Logo
+  logo = "img/logo.png"
+
+  # Social Links
+  [params.social]
+    twitter = "https://twitter.com/yourhandle"
+    linkedin = "https://linkedin.com/in/yourprofile"
+
+  # Navigation Menu
+  [[params.menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[params.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[params.menu.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 3
+
+  [[params.menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+
+# Optional: Add more configurations as needed
+# For example, configuring the footer, additional menus, etc.
